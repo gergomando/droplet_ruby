@@ -30,7 +30,7 @@ ARGV.options do |opts|
     opts.parse!
     end
 
-    token='4d74f120fe5be4bc2ba6e3f492ee39fda4e875f89c39a358d10af295721daad5'
+    token='YOUR_TOKEN'
     client = DropletKit::Client.new(access_token: token)
 
     new_droplet = DropletKit::Droplet.new(name: droplet.get_name, region: 'nyc3', size: droplet.get_size, image: 'ubuntu-14-04-x64')
